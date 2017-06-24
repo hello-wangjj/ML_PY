@@ -1,0 +1,30 @@
+#!python3
+# -*- coding: utf-8 -*-
+import numpy as np
+__author__ = 'wangjj'
+__mtime__ = '2017 06 20 20:12'
+mymatrix = np.mat([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+mymatrix2 = np.ones((3, 3))
+print('mymatrix:', '\n', mymatrix)
+print('mymatrix2:', '\n', mymatrix2)
+print('矩阵各元素的积：multiply')
+print('mymatrix*mymatrix2:', '\n', np.multiply(mymatrix, mymatrix2))
+print('矩阵的乘法： dot')
+print('mymatrix*mymatrix2:', '\n', np.dot(mymatrix, mymatrix2))
+print('mymatrix*mymatrix2:', '\n', mymatrix * mymatrix2)
+print(type(mymatrix))
+print(type(mymatrix2))
+myarray = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+myarray2 = np.ones((3, 3))
+print('myarray:', '\n', myarray)
+print('myarray2:', '\n', myarray2)
+print('矩阵各元素的积：multiply')
+print('myarray*myarray2:', '\n', np.multiply(myarray, myarray2))
+print('矩阵的乘法： dot')
+print('myarray*myarray2:', '\n', np.dot(myarray, myarray2))
+print('myarray*myarray2:', '\n', myarray * myarray2)
+print(type(myarray))
+print(type(myarray2))
+(m, n) = np.shape(mymatrix)
+print(m, n)
+print('myarray[0]', '\n', myarray[0])
